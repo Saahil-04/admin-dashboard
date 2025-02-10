@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Dashboard</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 
 <body>
@@ -23,65 +24,102 @@
         </aside>
 
         <header class="header">
-            <input type="text" placeholder="Search..." class="search">
             <div class="profile">
-                <span>User</span>
-                <img src="profile.jpg" alt="Profile">
+                <div class="search-container">
+                    <i class="fas fa-search search-icon"></i>
+                    <input type="text" placeholder="Search..." class="search">
+                </div>
+                <div class="user">
+                    <img src="./images/michael-dziedzic-nc11Hg2ja-s-unsplash.jpg" alt="User Profile"
+                        class="profile-image">
+                    <span>Saahil</span>
+                </div>
+            </div>
+            <div class="profile-name">
+                <img src="./images/dhruv-N9UuFddi7hs-unsplash.jpg" alt="" class="profile-image">
+                <div>
+                    <p>Hi,there</p>
+                    <h3>Saahil</h3>
+                </div>
+                <button>New</button>
+                <button>Upload</button>
+                <button>Share</button>
             </div>
         </header>
 
         <main class="main">
             <h2>Your Projects</h2>
             <div class="cards">
-                <div class="card">Card 1</div>
-                <div class="card">Card 2</div>
-                <div class="card">Card 3</div>
-                <div class="card">Card 4</div>
+                <div class="card">Project 1</div>
+                <div class="card">Project 2</div>
+                <div class="card">Project 3</div>
+                <div class="card">Project 4</div>
             </div>
         </main>
+
         <article class="announcements">
             <h2>Announcements</h2>
-            <div class="announcementscard">
-                <div class="chart">
+            <div class="announcement-container">
+                <div class="announcement-card">
                     <h5>Site Maintenance</h5>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit adipisci ut voluptates eum minus
-                        nemo dolore illo perferendis recusandae saepe!</p>
+                    <p>We will be undergoing scheduled maintenance on our servers.</p>
                 </div>
-                <div class="chart">
-                    <h5>Site Maintenance</h5>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit adipisci ut voluptates eum minus
-                        nemo dolore illo perferendis recusandae saepe!</p>
+                <div class="announcement-card">
+                    <h5>New Features</h5>
+                    <p>Exciting new features are coming soon!</p>
                 </div>
-                <div class="chart">
-                    <h5>Site Maintenance</h5>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit adipisci ut voluptates eum minus
-                        nemo dolore illo perferendis recusandae saepe!</p>
+                <div class="announcement-card">
+                    <h5>Security Update</h5>
+                    <p>Please update your passwords for enhanced security.</p>
                 </div>
-
             </div>
         </article>
 
         <article class="trending">
             <h2>Trending</h2>
-            <div class="trendingcard">
-                <div class="chart">
-                    <h5>Site Maintenance</h5>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit adipisci ut voluptates eum minus
-                        nemo dolore illo perferendis recusandae saepe!</p>
+            <div class="trending-container">
+                <div class="trending-card">
+                    <img src="https://cdn.pixabay.com/photo/2021/09/20/03/24/skeleton-6639547_1280.png"
+                        alt="Trending Image">
+                    <div>
+                        <h5>AI Innovations</h5>
+                        <p>Latest AI advancements in tech.</p>
+                    </div>
                 </div>
-                <div class="chart">
-                    <h5>Site Maintenance</h5>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit adipisci ut voluptates eum minus
-                        nemo dolore illo perferendis recusandae saepe!</p>
+                <div class="trending-card">
+                    <img src="https://cdn.pixabay.com/photo/2016/03/31/19/56/avatar-1295397_960_720.png"
+                        alt="Trending Image">
+                    <div>
+                        <h5>Cybersecurity Trends</h5>
+                        <p>New security measures in 2025.</p>
+                    </div>
                 </div>
-                <div class="chart">
-                    <h5>Site Maintenance</h5>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit adipisci ut voluptates eum minus
-                        nemo dolore illo perferendis recusandae saepe!</p>
+                <div class="trending-card">
+                    <img src="https://cdn.pixabay.com/photo/2021/11/12/03/04/woman-6787784_1280.png"
+                        alt="Trending Image">
+                    <div>
+                        <h5>Startup Boom</h5>
+                        <p>Young entrepreneurs taking over.</p>
+                    </div>
+                </div>
+                <div class="trending-card">
+                    <img src="https://cdn.pixabay.com/photo/2021/11/12/03/04/woman-6787784_1280.png"
+                        alt="Trending Image">
+                    <div>
+                        <h5>Startup Boom</h5>
+                        <p>Young entrepreneurs taking over.</p>
+                    </div>
+                </div>
+                <div class="trending-card">
+                    <img src="https://cdn.pixabay.com/photo/2021/11/12/03/04/woman-6787784_1280.png"
+                        alt="Trending Image">
+                    <div>
+                        <h5>Startup Boom</h5>
+                        <p>Young entrepreneurs taking over.</p>
+                    </div>
                 </div>
             </div>
         </article>
-
     </div>
 </body>
 
