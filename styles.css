@@ -10,7 +10,7 @@
 .dashboard {
     display: grid;
     grid-template-columns: 250px 1fr 0.5fr;
-    grid-template-rows: 150px 1fr 10.3fr;
+    grid-template-rows: 150px 1fr 0.3fr;
     grid-template-areas:
         "sidebar header header"
         "sidebar main announcements"
@@ -30,13 +30,13 @@
     gap: 20px;
 }
 
-.logo{
+.logo {
     display: flex;
     align-items: center;
     gap: 10px;
 }
 
-.logo svg{
+.logo svg {
     width: 40px;
     height: 40px;
 }
@@ -64,7 +64,7 @@
 }
 
 .sidebar nav ul li a:hover {
-   color: rgba(255, 255, 255, 0.438);
+    color: rgba(255, 255, 255, 0.438);
     border-radius: 5px;
 }
 
@@ -164,13 +164,13 @@
     font-weight: 600;
 }
 
-.user svg{
+.user svg {
     margin-right: 10px;
     width: 30px;
     height: 30px;
 }
 
-.name h3{
+.name h3 {
     font-size: 1.9rem;
     color: #333;
     font-weight: 600;
@@ -196,7 +196,7 @@
 /* Cards Layout */
 .cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
 }
 
@@ -207,12 +207,47 @@
     border-radius: 8px;
     text-align: center;
     font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-left: 5px solid #5aa5f7;
+}
+
+.project-info{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+    text-align: left;
+    margin-bottom: 40px;
+}
+
+.project-info h3 {
+    color: #333;
+    font-size: 1.2rem;
+}
+
+.project-info p {
+    color: #333;
+    font-size: 0.8rem;
+}
+
+.project-actions {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.project-actions svg {
+    margin: 0 10px;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
 }
 
 /* Announcements & Trending */
 .announcements,
 .trending {
-    margin: 10px;
+    margin: 20px;
 }
 
 .announcements {
